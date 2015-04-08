@@ -8,9 +8,9 @@ All three of the dependencies listed below should be downloaded and installed be
 
 **Installers**
 
-[Git](http://git-scm.com/downloads)
-[Vagrant](https://www.vagrantup.com/downloads.html)
-[VirtualBox](https://www.virtualbox.org/wiki/Downloads)
++ [Git](http://git-scm.com/downloads)
++ [Vagrant](https://www.vagrantup.com/downloads.html)
++ [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 
 
 ### Setup Instructions
@@ -67,6 +67,26 @@ gem install bundler
 gem install rails -v 4.2.0
 ```
 
+### Accessing the VM
+
+You can `ssh` into the VM. After changing into the `rails_dev_setup` directory, run the following command:
+
+```
+~/CodeForACause $ cd rails_dev_setup
+~/CodeForACause/rails_dev_setup $ vagrant ssh
+```
+
+You are now connected to a virtual instance of `Ubuntu 14.04` with `Ruby 2.2.1`, `Ruby on Rails` and `NodeJS`, which provides a JavaScript runtime. If you enter the following commands you should see the same files and directories as those that are in your `CodeForACause/rails_dev_setup` directory on your local machine. This is the shared folder. 
+
+```
+vagrant@rails-dev ~$ cd /vagrant
+vagrant@rails-dev /vagrant $ ls -la
+```
+
+The shared folder `vagrant` is the connection point between your local machine and your new virtual machine. You can make changes to the files in `rails_dev_setup` and those changes will be reflected in the `vagrant` directory on the virtual machine.
+
+
+---
 
 If you have any questions, concerns or issues, please email me [brad@capstory.me](mailto:brad@capstory.me). Or, show up a little early on Sunday, 12 April to the event. We will correct any issues at that time.
 
