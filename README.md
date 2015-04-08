@@ -85,6 +85,31 @@ vagrant@rails-dev /vagrant $ ls -la
 
 The shared folder `vagrant` is the connection point between your local machine and your new virtual machine. You can make changes to the files in `rails_dev_setup` and those changes will be reflected in the `vagrant` directory on the virtual machine.
 
+Once you are finished setting the VM up and have verified that you can successfully `ssh` into the VM, you can shut it down so that it doesn't take up too many resources:
+
+```
+vagrant@rails-dev: ~$ exit
+```
+
+You will now be back on your local machine. You can stop the VM from running in the background:
+
+```
+~/CodeForACause/rails_dev_setup $ vagrant halt
+```
+
+If you want to restart the VM, you simply enter the following command:
+
+```
+~/CodeForACause/rails_dev_setup $ vagrant up
+```
+
+In order to see what VM's you have running on your system, you can enter the following `VirtualBox` command:
+
+```
+~$ vboxmanage list runningvms
+```
+
+
 
 ---
 
