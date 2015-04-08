@@ -39,13 +39,14 @@ Clone this `git` repository. It will be cloned into a directory named `rails_dev
 Take a look at the directory. You should see the same files and directories as you see in this `Github` repository:
 
 ```
-~/CodeForACause $ ls -la
+~/CodeForACause $ cd rails_dev_setup
+~/CodeForACause/rails_dev_setup $ ls -la
 ```
 
 Next, you will start `Vagrant` with the following command:
 
 ```
-~/CodeForACause $ vagrant up
+~/CodeForACause/rails_dev_setup $ vagrant up
 ```
 
 This command will initiate the process of creating a virtual machine. After `Vagrant` installs and initializes a virtual instance of `Ubuntu 14.04 - Trusty Tahr`, it will then run the following shell commands automatically. **You do not need to do anything**.
@@ -69,10 +70,9 @@ gem install rails -v 4.2.0
 
 ### Accessing the VM
 
-You can `ssh` into the VM. After changing into the `rails_dev_setup` directory, run the following command:
+You can `ssh` into the VM by running the following command:
 
 ```
-~/CodeForACause $ cd rails_dev_setup
 ~/CodeForACause/rails_dev_setup $ vagrant ssh
 ```
 
