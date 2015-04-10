@@ -51,6 +51,8 @@ Next, you will start `Vagrant` with the following command:
 
 This command will initiate the process of creating a virtual machine. After `Vagrant` installs and initializes a virtual instance of `Ubuntu 14.04 - Trusty Tahr`, it will then run the following shell commands automatically. **You do not need to do anything**.
 
+*If `Vagrant` commands hang on Windows, try closing Git Bash and VirtualBox and then running both as Administrator.*
+
 #### This will take 5 - 10 mins
 
 ```
