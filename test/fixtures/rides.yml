@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  RideName: MyString
+  RideLength: 1.5
+  RideStartLocation: MyString
+  RideSponsorId: 1
+  RideDate: 2015-04-12 18:04:10
+  RideLaunchTime: 2015-04-12 18:04:10
+  RideTerrain: MyString
+  RidePace: MyString
+  RideLeader: 1
+
+two:
+  RideName: MyString
+  RideLength: 1.5
+  RideStartLocation: MyString
+  RideSponsorId: 1
+  RideDate: 2015-04-12 18:04:10
+  RideLaunchTime: 2015-04-12 18:04:10
+  RideTerrain: MyString
+  RidePace: MyString
+  RideLeader: 1
