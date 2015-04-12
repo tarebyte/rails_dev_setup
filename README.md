@@ -39,16 +39,19 @@ Clone this `git` repository. It will be cloned into a directory named `rails_dev
 Take a look at the directory. You should see the same files and directories as you see in this `Github` repository:
 
 ```
-~/CodeForACause $ ls -la
+~/CodeForACause $ cd rails_dev_setup
+~/CodeForACause/rails_dev_setup $ ls -la
 ```
 
 Next, you will start `Vagrant` with the following command:
 
 ```
-~/CodeForACause $ vagrant up
+~/CodeForACause/rails_dev_setup $ vagrant up
 ```
 
 This command will initiate the process of creating a virtual machine. After `Vagrant` installs and initializes a virtual instance of `Ubuntu 14.04 - Trusty Tahr`, it will then run the following shell commands automatically. **You do not need to do anything**.
+
+*If `Vagrant` commands hang on Windows, try closing Git Bash and VirtualBox and then running both as Administrator.*
 
 #### This will take 5 - 10 mins
 
@@ -69,10 +72,9 @@ gem install rails -v 4.2.0
 
 ### Accessing the VM
 
-You can `ssh` into the VM. After changing into the `rails_dev_setup` directory, run the following command:
+You can `ssh` into the VM by running the following command:
 
 ```
-~/CodeForACause $ cd rails_dev_setup
 ~/CodeForACause/rails_dev_setup $ vagrant ssh
 ```
 
@@ -84,6 +86,31 @@ vagrant@rails-dev /vagrant $ ls -la
 ```
 
 The shared folder `vagrant` is the connection point between your local machine and your new virtual machine. You can make changes to the files in `rails_dev_setup` and those changes will be reflected in the `vagrant` directory on the virtual machine.
+
+Once you are finished setting the VM up and have verified that you can successfully `ssh` into the VM, you can shut it down so that it doesn't take up too many resources:
+
+```
+vagrant@rails-dev: ~$ exit
+```
+
+You will now be back on your local machine. You can stop the VM from running in the background:
+
+```
+~/CodeForACause/rails_dev_setup $ vagrant halt
+```
+
+If you want to restart the VM, you simply enter the following command:
+
+```
+~/CodeForACause/rails_dev_setup $ vagrant up
+```
+
+In order to see what VM's you have running on your system, you can enter the following `VirtualBox` command:
+
+```
+~$ vboxmanage list runningvms
+```
+
 
 
 ---
