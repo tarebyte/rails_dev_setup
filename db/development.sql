@@ -1,0 +1,8 @@
+CREATE TABLE "cycling_profs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "CycID" integer, "Type" varchar(255), "PacePref" varchar(255), "YearStarted" integer, "PrefGroup" integer, "created_at" datetime, "updated_at" datetime);
+CREATE TABLE "emergency_contacts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "EID" integer, "Name" varchar(255), "Phone" integer, "Relationship" varchar(255), "created_at" datetime, "updated_at" datetime);
+CREATE TABLE "pel_profiles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "RiderID" integer, "YearsRidden" integer, "LivingProof" boolean, "HighRoller" boolean, "Scholar" boolean, "PaceSetter" boolean, "RoadLead" boolean, "GroundLead" boolean, "created_at" datetime, "updated_at" datetime);
+CREATE TABLE "pelotons" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "PelName" varchar(255), "PelCaptainID" integer, "PelWeb" varchar(255), "created_at" datetime, "updated_at" datetime);
+CREATE TABLE "riders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "Name" varchar(255), "Age" integer, "Addr1" varchar(255), "Addr2" varchar(255), "City" varchar(255), "State" varchar(255), "Zip" integer, "Region" varchar(255), "email" varchar(255), "phone" integer, "password" varchar(255), "created_at" datetime, "updated_at" datetime);
+CREATE TABLE "rides" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "RideName" varchar(255), "RideLength" float, "RideStartLocation" varchar(255), "RideSponsorId" integer, "RideDate" datetime, "RideLaunchTime" datetime, "RideTerrain" varchar(255), "RidePace" varchar(255), "RideLeader" integer, "created_at" datetime, "updated_at" datetime);
+CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL);
+CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version");

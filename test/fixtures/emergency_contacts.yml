@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  EID: 1
+  Name: MyString
+  Phone: 1
+  Relationship: MyString
+
+two:
+  EID: 1
+  Name: MyString
+  Phone: 1
+  Relationship: MyString
