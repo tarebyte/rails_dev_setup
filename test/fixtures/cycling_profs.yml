@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  CycID: 1
+  Type: MyString
+  PacePref: MyString
+  YearStarted: 1
+  PrefGroup: 1
+
+two:
+  CycID: 1
+  Type: MyString
+  PacePref: MyString
+  YearStarted: 1
+  PrefGroup: 1
