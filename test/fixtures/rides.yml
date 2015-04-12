@@ -5,19 +5,21 @@ one:
   RideLength: 1.5
   RideStartLocation: MyString
   RideSponsorId: 1
-  RideDate: 2015-04-12 18:04:10
-  RideLaunchTime: 2015-04-12 18:04:10
+  RideDate: 2015-04-12 19:51:36
+  RideLaunchTime: 2015-04-12 19:51:36
   RideTerrain: MyString
   RidePace: MyString
   RideLeader: 1
+  Description: MyString
 
 two:
   RideName: MyString
   RideLength: 1.5
   RideStartLocation: MyString
   RideSponsorId: 1
-  RideDate: 2015-04-12 18:04:10
-  RideLaunchTime: 2015-04-12 18:04:10
+  RideDate: 2015-04-12 19:51:36
+  RideLaunchTime: 2015-04-12 19:51:36
   RideTerrain: MyString
   RidePace: MyString
   RideLeader: 1
+  Description: MyString

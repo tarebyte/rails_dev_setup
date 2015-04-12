@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  RaceID: 1
+  Distance: 1.5
+
+two:
+  RaceID: 1
+  Distance: 1.5

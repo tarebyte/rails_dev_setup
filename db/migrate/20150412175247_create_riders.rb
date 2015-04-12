@@ -9,9 +9,9 @@ class CreateRiders < ActiveRecord::Migration
       t.string :State
       t.integer :Zip
       t.string :Region
-      t.string :email
-      t.integer :phone
-      t.string :password
+      t.string :Email
+      t.integer :Phone
+      t.string :Password
 
       t.timestamps
     end
