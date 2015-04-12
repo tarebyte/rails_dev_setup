@@ -20,5 +20,5 @@ apt-get -y install nodejs
 gem install bundler
 gem install rails -v 4.2.0
 
-wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+# wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 
