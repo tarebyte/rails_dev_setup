@@ -95,6 +95,7 @@ ActiveRecord::Schema.define(version: 20150412203345) do
     t.string   "Password"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "api_key"
   end
 
   create_table "rides", force: true do |t|

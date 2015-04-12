@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
+
+  scope '/api/v1/' do
+    #TODO need to change to specific verbs
+    resources :riders
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
+
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
@@ -12,8 +18,6 @@ Rails.application.routes.draw do
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
-
   # Example resource route with options:
   #   resources :products do
   #     member do
