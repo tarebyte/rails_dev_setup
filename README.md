@@ -146,7 +146,7 @@ Uh oh, merge conflict :cry:
     # Follow the instructions here. If you get lost, git status
     git push -f # Good to go!
 
-Brad merges your pull request! :tada:
+Brad merges your pull request! :tada: :fireworks:
 
     git checkout master # Go back to master
     git branch -D cool-feature # It's merged, we don't need this anymore
