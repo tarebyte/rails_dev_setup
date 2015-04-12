@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150412180410) do
+ActiveRecord::Schema.define(version: 20150412195419) do
 
   create_table "cycling_profs", force: true do |t|
     t.integer  "CycID"
@@ -23,11 +23,32 @@ ActiveRecord::Schema.define(version: 20150412180410) do
     t.datetime "updated_at"
   end
 
+  create_table "distances", force: true do |t|
+    t.integer  "RideID"
+    t.float    "Distance"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "emergency_contacts", force: true do |t|
     t.integer  "EID"
     t.string   "Name"
     t.integer  "Phone"
     t.string   "Relationship"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "locations", force: true do |t|
+    t.integer  "RideID"
+    t.string   "RideLocation"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "paces", force: true do |t|
+    t.integer  "RideID"
+    t.string   "Pace"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -62,23 +83,21 @@ ActiveRecord::Schema.define(version: 20150412180410) do
     t.string   "State"
     t.integer  "Zip"
     t.string   "Region"
-    t.string   "email"
-    t.integer  "phone"
-    t.string   "password"
+    t.string   "Email"
+    t.integer  "Phone"
+    t.string   "Password"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "rides", force: true do |t|
     t.string   "RideName"
-    t.float    "RideLength"
-    t.string   "RideStartLocation"
     t.integer  "RideSponsorId"
     t.datetime "RideDate"
     t.datetime "RideLaunchTime"
     t.string   "RideTerrain"
-    t.string   "RidePace"
     t.integer  "RideLeader"
+    t.string   "Description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
